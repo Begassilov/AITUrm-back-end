@@ -4,6 +4,7 @@ import com.example.AITUrm_backend.model.User;
 import com.example.AITUrm_backend.repository.UsersRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
@@ -11,9 +12,9 @@ import java.util.List;
 @Service
 public class IUserService implements UserService{
 
-    @Autowired
     private final UsersRepository repository;
 
+    @Autowired
     public IUserService(UsersRepository repository) {
         this.repository = repository;
     }
