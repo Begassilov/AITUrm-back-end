@@ -1,7 +1,7 @@
-package com.example.AITUrm_backend.controller;
+package com.example.aiturm.controller;
 
-import com.example.AITUrm_backend.model.User;
-import com.example.AITUrm_backend.service.UserService;
+import com.example.aiturm.model.User;
+import com.example.aiturm.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

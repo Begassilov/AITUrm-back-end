@@ -1,10 +1,9 @@
-package com.example.AITUrm_backend.service;
+package com.example.aiturm.service;
 
-import com.example.AITUrm_backend.model.User;
-import com.example.AITUrm_backend.repository.UsersRepository;
+import com.example.aiturm.model.User;
+import com.example.aiturm.repository.UsersRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Service;
 import java.util.List;
 

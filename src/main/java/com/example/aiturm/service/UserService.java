@@ -1,6 +1,6 @@
-package com.example.AITUrm_backend.service;
+package com.example.aiturm.service;
 
-import com.example.AITUrm_backend.model.User;
+import com.example.aiturm.model.User;
 
 import java.util.List;
 

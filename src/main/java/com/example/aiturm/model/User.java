@@ -1,4 +1,4 @@
-package com.example.AITUrm_backend.model;
+package com.example.aiturm.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

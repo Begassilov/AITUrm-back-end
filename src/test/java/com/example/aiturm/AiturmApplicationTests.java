@@ -1,10 +1,10 @@
-package com.example.AITUrm_backend;
+package com.example.aiturm;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AitUrmBackEndApplicationTests {
+class AiturmApplicationTests {
 
 	@Test
 	void contextLoads() {

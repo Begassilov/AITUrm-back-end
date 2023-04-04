@@ -1,6 +1,6 @@
-package com.example.AITUrm_backend.repository;
+package com.example.aiturm.repository;
 
-import com.example.AITUrm_backend.model.User;
+import com.example.aiturm.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

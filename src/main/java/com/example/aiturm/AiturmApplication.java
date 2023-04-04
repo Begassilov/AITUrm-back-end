@@ -1,15 +1,15 @@
-package com.example.AITUrm_backend;
+package com.example.aiturm;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.example.AITUrm_backend.repository")
-public class AitUrmBackEndApplication {
+@ComponentScan("com.example.aiturm.repository")
+public class AiturmApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AitUrmBackEndApplication.class);
+		SpringApplication.run(AiturmApplication.class);
 	}
 
 }

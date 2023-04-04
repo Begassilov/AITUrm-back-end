@@ -1,7 +1,7 @@
-package com.example.AITUrm_backend;
+package com.example.aiturm;
 
-import com.example.AITUrm_backend.model.User;
-import com.example.AITUrm_backend.repository.UsersRepository;
+import com.example.aiturm.model.User;
+import com.example.aiturm.repository.UsersRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
