@@ -1,70 +1,39 @@
 package com.example.aiturm.model;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class User {
+@Getter
+@Setter
+@ToString
+public class User extends BaseEntity{
 
-    private @Id @GeneratedValue Long id;
-    private String name;
-    private String role;
+    @Column(name = "first_name")
+    private String firstName;
 
-    public User() {}
+    @Column(name = "last_name")
+    private String lastName;
 
-    public User(String name, String role){
-        this.name = name;
-        this.role = role;
-    }
+    @Column(name = "patronymic_name")
+    private String patronymicName;
 
-    public Long getId() {
-        return id;
-    }
+    @Column(name = "phone_number")
+    private String phoneNumber;
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    @Column(name = "gender")
+    private String gender;
 
-    public String getName() {
-        return name;
-    }
+    @Column(name = "speciality")
+    private String speciality;
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (!(o instanceof User))
-            return false;
-        User user = (User) o;
-        return Objects.equals(this.id, user.id) && Objects.equals(this.name, user.name)
-                && Objects.equals(this.role, user.role);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, name, role);
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", role='" + role + '\'' +
-                '}';
-    }
+    @Column(name = "speciality_group")
+    private String group;
 }
