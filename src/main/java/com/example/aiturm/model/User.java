@@ -4,36 +4,40 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.math.BigInteger;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Getter
 @Setter
 @ToString
-public class User extends BaseEntity{
+@Table(name = "users")
+
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long user_id;
 
     @Column(name = "first_name")
-    private String firstName;
+    private String first_name;
 
     @Column(name = "last_name")
-    private String lastName;
+    private String last_name;
 
     @Column(name = "patronymic_name")
-    private String patronymicName;
+    private String patronymic_name;
 
     @Column(name = "phone_number")
-    private String phoneNumber;
+    private String phone_number;
 
     @Column(name = "gender")
-    private String gender;
+    private int gender;
 
-    @Column(name = "speciality")
-    private String speciality;
+    @Column(name = "speciality ")
+    private int speciality;
 
     @Column(name = "speciality_group")
-    private String group;
+    private String speciality_group;
 }

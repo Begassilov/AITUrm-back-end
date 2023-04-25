@@ -1,16 +1,41 @@
 package com.example.aiturm.service;
 
+
 import com.example.aiturm.model.User;
+import com.example.aiturm.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public interface UserService {
+@Service
+public class UserService {
+    @Autowired
+    UserRepository userRepository;
 
-    User getUserById(Long id);
+    @Autowired
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
 
-    void save(User user);
+    public User findById(Long id){
+        return  userRepository.getOne(id);
+    }
 
-    void deleteById(Long id);
+    public List<User> findAll(){
+        return  userRepository.findAll();
+    }
 
-    List<User> getAll();
+    public User saveUser(User user){
+        return userRepository.save(user);
+    }
+
+    public void deleteById(Long id){
+        userRepository.deleteById(id);
+    }
+
+    public boolean isUserAlreadyPresent(User user){
+        return false;
+    }
 }
+
